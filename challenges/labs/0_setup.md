@@ -10,6 +10,21 @@ CentOs 7
 
 80 Gb of capacity and 30 GB of Memory
 
+yum repolist enabled
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.xmission.com
+ * extras: linux.mirrors.es.net
+ * updates: mirrors.kernel.org
+repo id                      repo name                                    status
+base/7/x86_64                CentOS-7 - Base                              9,363
+cloudera-manager             Cloudera Manager, Version 5.11.1                 7
+extras/7/x86_64              CentOS-7 - Extras                              449
+updates/7/x86_64             CentOS-7 - Updates                           2,130
+repolist: 11,949
+
+
+
 
 sudo su
 [root@ip-172-31-29-52 centos]# useradd -u 2800 saturn
