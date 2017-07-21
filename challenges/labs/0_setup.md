@@ -1,8 +1,8 @@
 Cloud provider: AWS
 
 Instances: Private IP    -      Public DNS
-           172.31.29.52  - ec2-54-201-7-187.us-west-2.compute.amazonaws.com
            172.31.25.33  - ec2-54-200-240-43.us-west-2.compute.amazonaws.com
+           172.31.29.52  - ec2-54-201-7-187.us-west-2.compute.amazonaws.com           
            172.31.16.75  - ec2-54-186-200-156.us-west-2.compute.amazonaws.com
            172.31.30.36  - ec2-34-212-26-38.us-west-2.compute.amazonaws.com
 
