@@ -19,30 +19,38 @@ CentOs 7
 
 yum repolist enabled
 
-
 Loaded plugins: fastestmirror
 
 Loading mirror speeds from cached hostfile
 
- * base: mirrors.xmission.com
+* base: mirror.hostduplex.com
+
+* epel: s3-mirror-us-west-2.fedoraproject.org
+
+* extras: mirrors.tummy.com
+
+* updates: mirrors.ocf.berkeley.edu
+
+repo id                                           repo name                                                                        
+
+status
+
+base/7/x86_64                                     CentOS-7 - Base                                                                   
+9,363
+
+cloudera-cdh5                                     Cloudera's Distribution for Hadoop, Version 5                                       146
+
+cloudera-manager                                  Cloudera Manager                                                                      7
+
+epel/x86_64                                       Extra Packages for Enterprise Linux 7 - x86_64                                   11,943
+
+extras/7/x86_64                                   CentOS-7 - Extras                                                                   449
+
+updates/7/x86_64                                  CentOS-7 - Updates                                                                2,146
+
+repolist: 24,054
+
  
- * extras: linux.mirrors.es.net
- 
- * updates: mirrors.kernel.org
- 
-repo id                      repo name                                    status
-
-base/7/x86_64                CentOS-7 - Base                              9,363
-
-cloudera-manager             Cloudera Manager, Version 5.11.1                 7
-
-extras/7/x86_64              CentOS-7 - Extras                              449
-
-updates/7/x86_64             CentOS-7 - Updates                           2,130
-
-repolist: 11,949
-
-
 
 
 sudo su
