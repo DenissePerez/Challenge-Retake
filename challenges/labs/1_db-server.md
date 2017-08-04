@@ -41,14 +41,40 @@ grant all on oozie.* TO 'oozie'@'%' IDENTIFIED BY 'oozie_password';
 create database cms DEFAULT CHARACTER SET utf8;
 grant all on cms.* TO 'cms'@'%' IDENTIFIED BY 'cms';
 
-hostname ip 172.31.22.148
+[root@ip-172-31-22-184 etc]# hostname
+ip-172-31-22-184
+[root@ip-172-31-22-184 etc]# yum list installed | grep mariadb
+mariadb.x86_64                  1:5.5.52-1.el7                 @base
+mariadb-libs.x86_64             1:5.5.52-1.el7                 @base
+mariadb-server.x86_64           1:5.5.52-1.el7                 @base
+[root@ip-172-31-22-184 etc]# mysql -uroot -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 12
+Server version: 5.5.52-MariaDB MariaDB Server
 
-yum list installed | grep mariadb mariadb.x86_64 1:5.5.52-1.el7 @base
+Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
 
-mariadb-libs.x86_64 1:5.5.52-1.el7 @base/7.3.1611
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-mariadb-server.x86_64 1:5.5.52-1.el7 @base
-
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| amon               |
+| cms                |
+| hue                |
+| metastore          |
+| mysql              |
+| nav                |
+| navms              |
+| oozie              |
+| performance_schema |
+| rman               |
+| sentry             |
++--------------------+
+12 rows in set (0.00 sec)
  mysql -uroot -p Server version: 5.5.52-MariaDB MariaDB Server
 
 MariaDB [(none)]> show databases; +--------------------+ | Database | +--------------------+ | information_schema | | amon | | hue | | metastore | | mysql | | nav | | navms | | oozie | | performance_schema | | rman | | scm | | sentry | +--------------------+ 12 rows in set (0.00 sec)
