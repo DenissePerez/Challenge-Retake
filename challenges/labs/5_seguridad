@@ -4,9 +4,10 @@ Los 4 pilares de seguridad son:
 
 * Autorización:  Permisos que tiene el usuario de accesos y modificaciones en carpetas, archivos, etc.
 
+* Accountability: Auditoría
+
 * Privacidad: 
 
-* Accountability
 
 
 Autenticación
@@ -24,6 +25,9 @@ AD+LDAP MIT KDC (el kerberos del active directory)
 
 Autenticación:
 Verificación de credenciales para identificación del usuario.
+
+Autorización:
+Limitar el acceso dado a un usuario.
 HDFS, MapReduce, YARN, HiverServer2, Pig, Search, Sentry y Spark con capacidades de autorización en permisos de archivos y Sentry.
 Impala con autorizaciones de Sentry
 Oozie, Zookeeper y HBase, autorizaciones ACLs
@@ -31,4 +35,29 @@ Cloudera Manager y Cloudera Navigator con autorizaciones de roles de Cloudera
 Accumulo, Flume, Sentry, Sqoop, Sqoop2 y backup and Disaster Recovery.
 
 
+Auditoria: Captura un  archivo inmutable de toda la actividad del sistema, llevando seguridad y 
+permitiendo explicar qué, cuándo a quién, por quién o qué ocurrió en caso de una ataque malicioso.
+
+
+La auditoría de Cloudera Navigator permite llevar los registros de acceso a
+
+• Entidades HDFS accesadas por los servicios HDFS, Hive, HBase, Impala y Solr.
+
+• HBase e Impala
+
+• Hive metadata
+
+• Sentry
+
+• Solr
+
+• Cloudera Navigator Metadata Serve
+
+Las capacidades de auditoría de de los componentes de Cloudera Manager y CDH son:
+
+• HDFS, HBase, HiveServer2, Impala, Sentry, Cloudera Manager y Navigator que  son eventos capturados por la auditoría de Cloudera Navigator.
+
+• MapReduce, YARN, Pig y Spark, inferidos a través de HDFS.
+
+• Accumulo, Flume, Oozie, Search, Sqoop, Sqoop2 y Zookeeper, por medio de archivos Logs.
 
