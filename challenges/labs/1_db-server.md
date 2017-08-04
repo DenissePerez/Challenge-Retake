@@ -41,6 +41,9 @@ grant all on oozie.* TO 'oozie'@'%' IDENTIFIED BY 'oozie_password';
 create database cms DEFAULT CHARACTER SET utf8;
 grant all on cms.* TO 'cms'@'%' IDENTIFIED BY 'cms';
 
+create database cmf DEFAULT CHARACTER SET utf8;
+grant all on cmf.* TO 'cmf'@'%' IDENTIFIED BY 'cmf';
+
 [root@ip-172-31-22-184 etc]# hostname
 ip-172-31-22-184
 [root@ip-172-31-22-184 etc]# yum list installed | grep mariadb
@@ -63,6 +66,7 @@ MariaDB [(none)]> show databases;
 +--------------------+
 | information_schema |
 | amon               |
+| cmf               |
 | cms                |
 | hue                |
 | metastore          |
