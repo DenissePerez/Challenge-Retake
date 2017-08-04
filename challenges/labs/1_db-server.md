@@ -38,8 +38,8 @@ grant all on hue.* TO 'hue'@'%' IDENTIFIED BY 'hue_password';
 create database oozie DEFAULT CHARACTER SET utf8;
 grant all on oozie.* TO 'oozie'@'%' IDENTIFIED BY 'oozie_password';
 
-create database cms DEFAULT CHARACTER SET utf8;
-grant all on cms.* TO 'cms'@'%' IDENTIFIED BY 'cms';
+create database scm DEFAULT CHARACTER SET utf8;
+grant all on scm.* TO 'scm'@'%' IDENTIFIED BY 'scm';
 
 create database cmf DEFAULT CHARACTER SET utf8;
 grant all on cmf.* TO 'cmf'@'%' IDENTIFIED BY 'cmf';
@@ -66,8 +66,7 @@ MariaDB [(none)]> show databases;
 +--------------------+
 | information_schema |
 | amon               |
-| cmf               |
-| cms                |
+| cmf                |
 | hue                |
 | metastore          |
 | mysql              |
@@ -76,6 +75,7 @@ MariaDB [(none)]> show databases;
 | oozie              |
 | performance_schema |
 | rman               |
+| cms                |
 | sentry             |
 +--------------------+
 12 rows in set (0.00 sec)
