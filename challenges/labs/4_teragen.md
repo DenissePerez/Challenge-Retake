@@ -1,4 +1,6 @@
 sudo -u saturn hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/hadoop-examples.jar teragen 65536000 tgen
+
+
 17/08/04 17:56:46 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-17-168.us-west-2.compute.internal/172.31.17.168:8032
 17/08/04 17:56:46 INFO terasort.TeraSort: Generating 65536000 using 2
 17/08/04 17:56:46 INFO mapreduce.JobSubmitter: number of splits:2
@@ -86,3 +88,42 @@ sudo -u saturn hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/ha
                 Bytes Read=0
         File Output Format Counters
                 Bytes Written=6553600000
+                
+                
+                
+   
+
+
+[root@ip-172-31-17-168 saturn]# sudo -u hdfs hdfs dfs -ls /user/saturn/
+Found 1 items
+drwxr-xr-x   - saturn supergroup          0 2017-08-04 17:58 /user/saturn/tgen
+
+sudo -u hdfs hadoop fsck -blocks /user/saturn
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Connecting to namenode via http://ip-172-31-17-168.us-west-2.compute.internal:50070
+FSCK started by hdfs (auth:SIMPLE) from /172.31.17.168 for path /user/saturn at Fri Aug 04 18:09:56 UTC 2017
+...Status: HEALTHY
+ Total size:    6553600000 B
+ Total dirs:    2
+ Total files:   3
+ Total symlinks:                0
+ Total blocks (validated):      50 (avg. block size 131072000 B)
+ Minimally replicated blocks:   50 (100.0 %)
+ Over-replicated blocks:        0 (0.0 %)
+ Under-replicated blocks:       0 (0.0 %)
+ Mis-replicated blocks:         0 (0.0 %)
+ Default replication factor:    3
+ Average block replication:     3.0
+ Corrupt blocks:                0
+ Missing replicas:              0 (0.0 %)
+ Number of data-nodes:          3
+ Number of racks:               1
+FSCK ended at Fri Aug 04 18:09:56 UTC 2017 in 3 milliseconds
+
+
+The filesystem under path '/user/saturn' is HEALTHY
+
+
+
