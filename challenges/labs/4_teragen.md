@@ -1,4 +1,4 @@
-sudo -u hdfs hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/hadoop-examples.jar teragen 65536000 tgen
+sudo -u saturn hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/hadoop-examples.jar teragen 65536000 tgen
 17/08/04 17:56:46 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-17-168.us-west-2.compute.internal/172.31.17.168:8032
 17/08/04 17:56:46 INFO terasort.TeraSort: Generating 65536000 using 2
 17/08/04 17:56:46 INFO mapreduce.JobSubmitter: number of splits:2
