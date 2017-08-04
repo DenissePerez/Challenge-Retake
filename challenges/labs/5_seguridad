@@ -1,0 +1,22 @@
+Los 4 pilares de seguridad son:
+
+* Autenticación: Refiere a validar el usuario. Demostrar que el usuario es quién dice ser
+* Autorización:  Permisos que tiene el usuario de accesos y modificaciones en carpetas, archivos, etc.
+* Privacidad: 
+* Accountability
+
+
+Autenticación
+CM: ad/LDAP. Tiene la capacidad de integrar un active directory para autenticar usuarios.
+Hadoop es un entorno distribuido.
+CDH: Kerberos AD o MIT KDC, 
+key tabs
+usuarios interactúan con la máquina por medio de los edge
+
+Esquema de autenticación enHDFS es Kerberos: Protocolo de autenticación.
+ 
+opciones: active directory (el kerberos del active directory)
+AD+LDAP MIT KDC (el kerberos del active directory)
+Todo local
+
+
